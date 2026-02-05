@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMaps"
+            android:layout_gravity="end"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_map"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailPelanggan"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        android:background="@drawable/a2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_marginTop="215dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/GNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/JNama"
+                        android:layout_width="300dp"
+                        android:layout_height="37dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Adi"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textColor="#fff"
+                        android:textSize="27sp" />
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="290dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="30dp"
+                        android:text="Alamat :"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/JAlamat"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_width="310dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:text="Jakarta"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GBerat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Berat Cucian :"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/JBerat"
+                        android:layout_width="310dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="5 kg"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Mode Laundry :"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/JMode"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_marginLeft="70dp"
+                        android:text="Cuci"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="290dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/JHitungTotal"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Total Bayar : 4 x 10000"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/JTotal"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:text="12000"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

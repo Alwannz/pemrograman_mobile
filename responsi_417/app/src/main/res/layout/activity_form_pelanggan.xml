@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formPelanggan"
+    android:background="@drawable/xbg2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/infoSewa"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Form Data Laundry"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="#fff"
+                android:textSize="27sp" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="290dp"
+                android:layout_marginTop="13dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/white" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfNama"
+                android:layout_marginTop="10dp"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfAlamat"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Alamat"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfBerat"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Berat Cucian"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBerat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="90dp"
+                android:text="Pilih Mode : "
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/modeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPromo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/white"
+                    android:id="@+id/rbCuci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Cuci"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:buttonTint="@color/white"
+                    android:id="@+id/rbSetrika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="1"
+                    android:text="Cuci + Setrika"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selesai"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Selesai"
+                android:textColor="@color/colorPrimary"
+                app:backgroundTint="@color/white"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

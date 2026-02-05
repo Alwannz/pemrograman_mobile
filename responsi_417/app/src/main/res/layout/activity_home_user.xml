@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeUser"
+    android:background="@drawable/bghome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="297dp"
+            android:layout_height="298dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/hme2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/isiData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Laundry Pakaian Sekarang juga !!"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsbold"
+            app:backgroundTint="@color/colorPrimary"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="614dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lihatData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Riwayat Pesanan Saya"
+            android:textColor="@color/white"
+            android:layout_marginTop="6dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsbold"
+            app:backgroundTint="@color/colorPrimary"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="614dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginTop="17dp"
+            app:backgroundTint="#FF5252"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_logout"
+
+            android:clickable="true"
+            android:focusable="true"
+            app:rippleColor="#50FFFFFF"
+            android:elevation="4dp"
+            app:elevation="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
